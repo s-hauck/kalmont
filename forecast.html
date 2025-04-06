@@ -3,42 +3,97 @@
   <head>
     <!-- this areas is intruction for broswer and not the user-->
     <meta charset="utf-8" />
-    <title>simon hauck's portfolio</title>
+    <title>Kalmont weather forecast</title>
     <meta name="viewport" content="width=device-width, intitial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="reset.css" />
   </head>
 
   <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="nav-logo">Kalmont</div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Weather Forecast</a>
+          <div class="nav-dropdown">
+            <a href="#" class="nav-link">Safety</a>
+            <div class="dropdown-icon">▼</div>
+          </div>
+          <a href="#" class="nav-link">About us</a>
+          <a href="#" class="nav-link">Donate</a>
+        </div>
+      </div>
+    </nav>
     <main>
-      <section class="weather-section">
-        <div class="weather-container">
+      <section class="forecast-hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Weather Forecast</h1>
+          <!-- <h2 class="hero-subtitle">Take your AST 1 now</h2> -->
+          <div class="hero-divider"></div>
+        </div>
+      </section>
+
+      <section class="snow-report">
+        <div class="snow-report-content">
+          <h2 class="snow-report-title">Snow Report</h2>
+
+          <div class="snow-stats">
+            <div class="snow-timeframes">
+              <div class="timeframe">
+                <div class="timeframe-label">12HRS</div>
+                <div class="timeframe-value">12cm</div>
+              </div>
+              <div class="timeframe">
+                <div class="timeframe-label">OVERNIGHT</div>
+                <div class="timeframe-value">0cm</div>
+              </div>
+              <div class="timeframe">
+                <div class="timeframe-label">24HRS</div>
+                <div class="timeframe-value">12cm</div>
+              </div>
+              <div class="timeframe">
+                <div class="timeframe-label">48HRS</div>
+                <div class="timeframe-value">12cm</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="season-total">
+            <div class="total-label">TOTAL THIS SEASON</div>
+            <div class="total-value">602cm</div>
+          </div>
+          <a href="#" class="thebutton">View Forecast</a>
+          <!-- <button class="thebutton">View Forecast</button> -->
+        </div>
+      </section>
+
+      <section class="weather-forecast">
+        <div class="forecast-container">
           <div class="today-forecast">
             <div class="forecast-header">
               <h2>TODAY'S FORECAST</h2>
             </div>
             <div class="forecast-content">
               <div class="current-weather">
-                <div class="temperature">
-                  <div class="temp-value">-7°C</div>
-                  <div class="weather-icon">☁️</div>
-                </div>
+                <div class="temperature">-7°C</div>
+                <div class="weather-icon">☁️</div>
                 <div class="weather-desc">Cloudy with sunny periods</div>
               </div>
               <div class="weather-details">
-                <div class="detail-item">
-                  <div class="detail-value">-9°C</div>
+                <div class="detail">
                   <div class="detail-label">HI</div>
+                  <div class="detail-value">-9°C</div>
                 </div>
-                <div class="detail-item">
-                  <div class="detail-value">-10°C</div>
+                <div class="detail">
                   <div class="detail-label">LOW</div>
+                  <div class="detail-value">-10°C</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail">
                   <div class="detail-value">12cm</div>
                   <div class="detail-label">DAYTIME SNOW</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail">
                   <div class="detail-value">NIL</div>
                   <div class="detail-label">OVERNIGHT SNOW</div>
                 </div>
@@ -50,7 +105,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="five-day-forecast">
             <div class="forecast-day">
               <div class="date">
@@ -59,9 +114,8 @@
               </div>
               <div class="day-name">Tomorrow</div>
               <div class="day-forecast">
-                <div class="forecast-icon">☁️</div>
-                <div class="forecast-temp">-7°C Hi</div>
-                <div class="forecast-temp">-10°C Low</div>
+                <div class="temp-high">-7°C Hi</div>
+                <div class="temp-low">-10°C Low</div>
               </div>
             </div>
             <div class="forecast-day">
@@ -71,9 +125,8 @@
               </div>
               <div class="day-name">Wednesday</div>
               <div class="day-forecast">
-                <div class="forecast-icon">☁️</div>
-                <div class="forecast-temp">-5°C Hi</div>
-                <div class="forecast-temp">-7°C Low</div>
+                <div class="temp-high">-5°C Hi</div>
+                <div class="temp-low">-7°C Low</div>
               </div>
             </div>
             <div class="forecast-day">
@@ -83,9 +136,8 @@
               </div>
               <div class="day-name">Thursday</div>
               <div class="day-forecast">
-                <div class="forecast-icon">☁️</div>
-                <div class="forecast-temp">-6°C Hi</div>
-                <div class="forecast-temp">-8°C Low</div>
+                <div class="temp-high">-6°C Hi</div>
+                <div class="temp-low">-8°C Low</div>
               </div>
             </div>
             <div class="forecast-day">
@@ -95,9 +147,8 @@
               </div>
               <div class="day-name">Friday</div>
               <div class="day-forecast">
-                <div class="forecast-icon">☁️</div>
-                <div class="forecast-temp">-6°C Hi</div>
-                <div class="forecast-temp">-7°C Low</div>
+                <div class="temp-high">-6°C Hi</div>
+                <div class="temp-low">-7°C Low</div>
               </div>
             </div>
             <div class="forecast-day">
@@ -107,22 +158,118 @@
               </div>
               <div class="day-name">Saturday</div>
               <div class="day-forecast">
-                <div class="forecast-icon">☁️</div>
-                <div class="forecast-temp">-7°C Hi</div>
-                <div class="forecast-temp">-9°C Low</div>
+                <div class="temp-high">-7°C Hi</div>
+                <div class="temp-low">-9°C Low</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-  
 
-
-
-
+      <section class="card-section">
+        <div class="card-container">
+          <div class="card-column">
+            <div class="card-image">
+              <img src="images/card1.jpg" alt="Card Image 1" />
+            </div>
+            <div class="card-content">
+              <div class="card-title">Avalanche</div>
+              <p class="card-text">
+                Avalanches can happen whenever there is snow lying on the ground
+                at a sufficient angle. Every year there are avalanche accidents
+                in Whistler. While there is always an avalanche risk in winter,
+                some of these accidents could have been avoided by awareness and
+                planning.
+              </p>
+              <a href="#" class="thebutton">Read More</a>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card-image">
+              <img src="images/card2.jpg" alt="Card Image 2" />
+            </div>
+            <div class="card-content">
+              <div class="card-title">Hypothermia</div>
+              <p class="card-text">
+                The two most common causes of hypothermia on the hill are
+                exhaustion and injury. Walkers with inadequate food, clothing
+                and shelter will not be able to sustain the level of physical
+                work to replace the heat they are losing. Injury leads to
+                immobility and a similar inability to generate heat – just think
+                how you cool, off when you stop for your 'piece'.
+              </p>
+              <a href="#" class="thebutton">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="newsletter">
+          <p class="newsletter-text">
+            Join our newsletter to stay up to date on features and releases.
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="email-input"
+            />
+            <button class="thebutton">Subscribe</button>
+          </div>
+          <p class="privacy-text">
+            By subscribing you agree to with our Privacy Policy and provide
+            consent to receive updates.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="nav-column">
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Weather Forecast</a></li>
+              <li><a href="#">Safety</a></li>
+              <li><a href="#">Recent News</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </div>
+          <div class="social-column">
+            <h3 class="footer-heading">Follow Us</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#">
+                  <img src="images/facebook.svg" alt="Facebook" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/instagram.svg" alt="Instagram" />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/youtube.svg" alt="Youtube" />
+                  <span>Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <div class="divider"></div>
+        <div class="credits-content">
+          <p class="copyright">© 2025 Kalmont. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
-<!-- test test test -->
