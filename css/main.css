@@ -20,7 +20,7 @@ p {
 
 body {
   width: 100vw;
-  background-color: rgba(166, 178, 180, 0.1);
+  background-color: #e8edf1;
 }
 
 .main-container {
@@ -28,16 +28,18 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  background-color: #bf2d37;
+  background-image: url('../img/heroimage2.jpg');
+  background-repeat: no-repeat;
+  background-size: 140%;
 }
 
 .content-section {
-  width: 880px;
-  margin: 50px 30px;
+  width: 60%;
+  margin: 10rem 5rem;
 }
 
 .header {
-  margin-bottom: 45px;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -53,29 +55,35 @@ body {
 
 .divider {
   width: 100%;
-  height: 0.09375rem;
+  height: 0.2rem;
   background-color: black;
-  margin: 2.8125rem 0;
 }
 
 .stats-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .stat-box {
-  width: 225px;
-  height: 180px;
-  border: 1.5px solid black;
-  border-radius: 12px;
-  padding: 32.5px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* width: auto;
+  height: auto; */
+  backdrop-filter: blur(2rem);
+  border: 0.2rem solid black;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
 }
 
 .stat-number {
   font-size: 56px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .stat-label {
@@ -83,13 +91,13 @@ body {
 }
 
 .donation-section {
-  margin-top: 62px;
+  margin-top: 2rem;
   text-align: center;
 }
 
 .donation-text {
   font-size: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
 }
 
 .thebutton {
@@ -115,7 +123,7 @@ body {
 .avalanche-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../images/avalanche-bg.jpg");
+  background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -123,7 +131,7 @@ body {
   align-items: center;
 }
 .avalanche-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +142,7 @@ body {
 .forecast-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../images/avalanche-bg.jpg");
+  background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -142,7 +150,7 @@ body {
   align-items: center;
 }
 .forecast-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -153,7 +161,7 @@ body {
 .donate-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../images/avalanche-bg.jpg");
+  background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -161,7 +169,7 @@ body {
   align-items: center;
 }
 .donate-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +180,7 @@ body {
 .aboutus-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../images/avalanche-bg.jpg");
+  background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -180,7 +188,7 @@ body {
   align-items: center;
 }
 .aboutus-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -191,7 +199,7 @@ body {
 .hypothermia-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../images/avalanche-bg.jpg");
+  background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -199,7 +207,7 @@ body {
   align-items: center;
 }
 .hypothermia-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -303,8 +311,8 @@ main {
 /* Snow Report Styles */
 .snow-report {
   width: 100%;
-  height: 560px;
-  background-image: url("../images/snow-bg.jpg");
+  height: auto;
+  background-image: url('../images/snow-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -418,7 +426,7 @@ main {
 /* News Section Styles */
 .info-section {
   width: 100%;
-  min-height: 822px;
+  /* min-height: 20rem; */
   background-color: #e8edf1;
   display: flex;
   justify-content: center;
@@ -432,15 +440,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 63px;
+  gap: 1rem;
 }
 
 .info-content {
-  width: 35rem;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-top: 34px;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .info-label {
@@ -451,20 +459,20 @@ main {
 .info-article {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1rem;
 }
 
 .info-title {
   font-size: 48px;
   font-weight: bold;
   color: #000;
-  line-height: 1.2;
+  /* line-height: 1.2; */
 }
 
 .info-text {
-  font-size: 18px;
+  /* font-size: 18px; */
   color: #000;
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 /* .read-more-button {
@@ -490,9 +498,10 @@ main {
 } */
 
 .info-image {
-  width: 551px;
-  height: 598px;
+  width: 40%;
+  height: auto;
   overflow: hidden;
+  background-color: #a8252e;
 }
 
 .info-image img {
@@ -505,7 +514,7 @@ main {
 .crew-section {
   width: 100%;
   height: 574px;
-  background-image: url("../images/crew-bg.jpg");
+  background-image: url('../images/crew-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -514,7 +523,7 @@ main {
 }
 
 .crew-section::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(166, 178, 180, 0.4);
@@ -1200,9 +1209,9 @@ main {
   color: #000;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"] {
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='tel'] {
   height: 44px;
   padding: 10px;
   border: 1px solid #000;
@@ -1233,7 +1242,7 @@ main {
   gap: 10px;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type='checkbox'] {
   width: 15px;
   height: 15px;
   border: 1px solid #000;
