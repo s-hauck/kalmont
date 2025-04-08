@@ -28,14 +28,17 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  background-image: url('../img/heroimage2.jpg');
+  background-image: url('../img/lonehiker.jpg');
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: cover;
+  /* background-position: 0 3rem; */
 }
 
 .content-section {
-  width: 60%;
-  margin: 10rem 5rem;
+  /* backdrop-filter: blur(2rem);
+  padding: 5rem; */
+  width: 50%;
+  margin: 12rem 0rem;
 }
 
 .header {
@@ -62,7 +65,7 @@ body {
 .stats-container {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -70,14 +73,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 10rem;
 
   /* width: auto;
   height: auto; */
   backdrop-filter: blur(2rem);
+  background-color: rgba(255, 255, 255, 0.157);
   border: 0.2rem solid black;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .stat-number {
@@ -87,7 +95,7 @@ body {
 }
 
 .stat-label {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .donation-section {
@@ -108,10 +116,10 @@ body {
   padding: 0.1875rem 1.875rem;
   border-radius: 1.875rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  border: none;
+  /* cursor: pointer;
+  border: none; */
 }
 
 .thebutton:hover {
@@ -122,10 +130,10 @@ body {
 
 .avalanche-hero {
   width: 100%;
-  height: 565px;
-  background-image: url('../images/avalanche-bg.jpg');
+  height: 40rem;
+  background-image: url('../img/mountains.jpg');
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   position: relative;
   display: flex;
   align-items: center;
@@ -141,7 +149,7 @@ body {
 }
 .forecast-hero {
   width: 100%;
-  height: 565px;
+  height: 40rem;
   background-image: url('../images/avalanche-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -158,17 +166,20 @@ body {
   bottom: 0;
   background-color: rgba(232, 237, 241, 0.4);
 }
+
 .donate-hero {
   width: 100%;
-  height: 565px;
-  background-image: url('../images/avalanche-bg.jpg');
+  height: 40rem;
+  background-image: url('../img/donate-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
+  color: white;
 }
-.donate-hero::before {
+
+/* .donate-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -176,18 +187,18 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(232, 237, 241, 0.4);
-}
+} */
 .aboutus-hero {
   width: 100%;
-  height: 565px;
-  background-image: url('../images/avalanche-bg.jpg');
+  height: 40rem;
+  background-image: url('../img/aboutus.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
 }
-.aboutus-hero::before {
+/* .aboutus-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -195,7 +206,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(232, 237, 241, 0.4);
-}
+} */
 .hypothermia-hero {
   width: 100%;
   height: 565px;
@@ -219,9 +230,9 @@ body {
 /* hero section sub sections */
 
 .hero-content {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 299px;
+  padding: 0 10rem;
   position: relative;
   z-index: 1;
 }
@@ -238,10 +249,10 @@ body {
 }
 
 .hero-divider {
-  width: 842px;
-  height: 1px;
+  width: 100%;
+  height: 0.2rem;
   background-color: black;
-  margin-top: 30px;
+  margin-top: 0.5rem;
 }
 
 /* end of hero sections */
@@ -252,21 +263,21 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 72px;
+  height: 4rem;
   background-color: #bf2d37;
   box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
-  backdrop-filter: blur(50px);
+  /* backdrop-filter: blur(50px); */
   z-index: 1000;
 }
 
 .nav-content {
-  max-width: 1441px;
+  max-width: auto;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 64px;
+  padding: 0 2rem;
 }
 
 .nav-logo {
@@ -277,7 +288,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -289,7 +300,7 @@ body {
 }
 
 .nav-link:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .nav-dropdown {
@@ -311,10 +322,12 @@ main {
 /* Snow Report Styles */
 .snow-report {
   width: 100%;
-  height: auto;
-  background-image: url('../images/snow-bg.jpg');
+
+  padding: 5rem;
+
+  background-image: url('../img/snow-bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 0rem -10rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -335,13 +348,14 @@ main {
 } */
 
 .snow-report-content {
-  width: 300rem;
+  /* background-color: #a8252e; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
-  position: relative;
-  z-index: 1;
+  gap: 2rem;
+  width: 100%;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .snow-report-title {
@@ -352,23 +366,23 @@ main {
 }
 
 .snow-stats {
-  width: 790px;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2rem;
 }
 
 .snow-timeframes {
   display: flex;
   justify-content: space-between;
-  padding: 0 94px;
+  padding: 0rem 1rem;
 }
 
 .timeframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 33px;
+  gap: 2rem;
 }
 
 .timeframe-label {
@@ -384,7 +398,7 @@ main {
 
 .snow-stats .divider {
   width: 100%;
-  height: 1.5px;
+  height: 0.2rem;
   background-color: #000;
 }
 
@@ -392,7 +406,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 106px;
+  gap: 3rem;
 }
 
 .total-label {
@@ -431,16 +445,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 112px 0; */
+  padding: 5rem 0;
 }
 
 .info-container {
   /* width: 1145px; */
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .info-content {
@@ -459,7 +475,7 @@ main {
 .info-article {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .info-title {
@@ -513,25 +529,25 @@ main {
 /* Crew Section Styles */
 .crew-section {
   width: 100%;
-  height: 574px;
-  background-image: url('../images/crew-bg.jpg');
+  height: 40rem;
+  background-image: url('../img/s&r meeththecrew.webp');
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
-  filter: contrast(0.83) saturate(0.83);
+  /* filter: contrast(0.83) saturate(0.83); */
 }
 
-.crew-section::before {
+/* .crew-section::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(166, 178, 180, 0.4);
-}
+} */
 
 .crew-content {
   width: 50%;
-  height: 100%;
+
   background-color: rgba(117, 117, 117, 0.2);
   backdrop-filter: blur(50px);
   box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
@@ -540,15 +556,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 0 56px; */
+  padding: 1rem 5rem;
 }
 
 .crew-info {
-  max-width: 30rem;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  /* justify-content: flex-end; */
   gap: 2rem;
-  margin-left: 17.5rem;
+  /* margin-left: 17.5rem; */
 }
 
 .crew-title {
@@ -568,25 +585,25 @@ main {
 
 .crew-info .divider {
   width: 100%;
-  height: 1px;
+  height: 0.2rem;
   background-color: white;
   margin: 0;
 }
 
-.crew-logos {
+/* .crew-logos {
   position: absolute;
   bottom: 220px;
   left: 56px;
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
+} */
 
-.logo-row {
+/* .logo-row {
   display: flex;
   gap: 32px;
-}
-
+} */
+/* 
 .logo-container {
   width: 140px;
   height: 56px;
@@ -599,7 +616,7 @@ main {
   max-width: 100%;
   max-height: 100%;
   filter: brightness(0) invert(1);
-}
+} */
 
 /* Card Section Styles */
 .card-section {
@@ -610,7 +627,7 @@ main {
 }
 
 .card-container {
-  width: 1312px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 64px;
@@ -665,39 +682,39 @@ main {
 /* Footer Styles */
 .footer {
   width: 100%;
-  min-height: 570px;
+  min-height: auto;
   background-color: #a6b2b4;
-  padding: 80px 0;
+  padding: 5rem;
 }
 
 .footer-content {
-  width: 1312px;
+  width: auto;
   margin: 0 auto;
   display: flex;
-  gap: 128px;
+  gap: 5rem;
 }
 
 .newsletter {
-  width: 500px;
+  width: 40%;
 }
 
 .newsletter-text {
   font-size: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 1rem;
 }
 
 .newsletter-form {
   display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .email-input {
   flex: 1;
-  height: 48px;
-  padding: 0 12px;
+  height: 2.5rem;
+  padding: 0 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: white;
 }
 
@@ -709,19 +726,19 @@ main {
 .footer-links {
   flex: 1;
   display: flex;
-  gap: 132px;
+  justify-content: space-around;
 }
 
 .nav-column,
 .social-column {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .footer-heading {
   font-size: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .footer-nav {
@@ -731,7 +748,7 @@ main {
 }
 
 .footer-nav li {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .footer-nav a {
@@ -747,33 +764,33 @@ main {
 }
 
 .social-links li {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .social-links a {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1rem;
   color: black;
   text-decoration: none;
   font-size: 18px;
 }
 
 .social-links img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .footer-credits {
-  width: 1312px;
-  margin: 80px auto 0;
+  width: auto;
+  margin: 1rem auto 0;
 }
 
 .footer-credits .divider {
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  margin-bottom: 32px;
+  width: auto;
+  height: 0.03rem;
+  background-color: rgb(114, 114, 114);
+  margin-bottom: 2rem;
 }
 
 .credits-content {
@@ -788,7 +805,7 @@ main {
 
 .legal-links {
   display: flex;
-  gap: 24px;
+  gap: 3rem;
 }
 
 .legal-links a {
