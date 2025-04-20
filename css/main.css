@@ -38,18 +38,19 @@ body {
 }
 
 .content-section {
-  /* backdrop-filter: blur(2rem);
-  padding: 5rem; */
-  width: 50%;
+  width: 90%;
   margin: 12rem 0rem;
 }
 
 .header {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  font-size: 96px;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -68,6 +69,8 @@ body {
 .stats-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -156,7 +159,7 @@ body {
 .forecast-hero {
   width: 100%;
   height: 40rem;
-  background-image: url('../images/avalanche-bg.jpg');
+  background-image: url('../img/skiiers.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -170,19 +173,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(232, 237, 241, 0.4);
+  background-color: rgba(232, 237, 241, 0.195);
 }
 
 .donate-hero {
   width: 100%;
   height: 40rem;
+  color: white;
   background-image: url('../img/donate-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
-  color: white;
 }
 
 /* .donate-hero::before {
@@ -254,11 +257,10 @@ body {
   margin-top: 0;
 }
 
-.hero-divider {
+.donate-divider {
   width: 100%;
   height: 0.2rem;
-  background-color: black;
-  margin-top: 0.5rem;
+  background-color: #ffffff;
 }
 
 /* end of hero sections */
@@ -332,26 +334,15 @@ main {
   padding: 5rem;
 
   background-image: url('../img/snow-bg.jpg');
-  background-size: cover;
-  background-position: 0rem -10rem;
+
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: 0rem -30rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .snow-report::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.8)
-  );
-} */
 
 .snow-report-content {
   /* background-color: #a8252e; */
@@ -372,7 +363,7 @@ main {
 }
 
 .snow-stats {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -381,6 +372,7 @@ main {
 .snow-timeframes {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 0rem 1rem;
 }
 
@@ -388,7 +380,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  padding: 1.5rem;
 }
 
 .timeframe-label {
@@ -462,13 +455,14 @@ main {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8rem;
 }
 
 .info-content {
-  width: 30%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -500,36 +494,14 @@ main {
   line-height: 1.8rem;
 }
 
-/* .read-more-button {
-  background-color: #bf2d37;
-  color: white;
-  border: 1px solid #bf2d37;
-  border-radius: 30px;
-  padding: 3px 30px;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  width: 159px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .read-more-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-} */
-
 .info-image {
   height: fit-content;
-  width: 40%;
+  width: 90%;
   overflow: hidden;
 }
 
 .info-image img {
-  object-position: -10rem 3rem;
+  object-position: -22rem 3rem;
   /* width: 100%; */
   height: fit-content;
   object-fit: cover;
@@ -554,7 +526,7 @@ main {
   background: rgba(166, 178, 180, 0.4);
 } */
 .crew-content {
-  /* width: 50%;
+  width: 100%;
 
   background-color: rgba(117, 117, 117, 0.2);
   backdrop-filter: blur(50px);
@@ -564,84 +536,59 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 5rem; */
-  display: none;
+  padding: 1rem 5rem;
 }
 
-.crew-section:hover {
-  .crew-content {
-    width: 50%;
+.crew-content {
+  width: 100%;
 
-    background-color: rgba(117, 117, 117, 0.2);
-    backdrop-filter: blur(50px);
-    box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 5rem;
-  }
-
-  .crew-info {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-end; */
-    gap: 2rem;
-    /* margin-left: 17.5rem; */
-  }
-
-  .crew-title {
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
-    line-height: 1.2;
-    margin: 0;
-  }
-
-  .crew-text {
-    font-size: 18px;
-    color: white;
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .crew-info .divider {
-    width: 100%;
-    height: 0.2rem;
-    background-color: white;
-    margin: 0;
-  }
-}
-
-/* .crew-logos {
-  position: absolute;
-  bottom: 220px;
-  left: 56px;
+  background-color: rgba(117, 117, 117, 0.2);
+  backdrop-filter: blur(50px);
+  box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-} */
-
-/* .logo-row {
-  display: flex;
-  gap: 32px;
-} */
-/* 
-.logo-container {
-  width: 140px;
-  height: 56px;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 1rem 5rem;
 }
 
-.logo-container img {
+.crew-info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-left: 0rem;
+}
+
+.crew-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.crew-text {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.crew-info .divider {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+  margin: 0;
+}
+
+*/ .logo-container img {
   max-width: 100%;
   max-height: 100%;
   filter: brightness(0) invert(1);
-} */
+}
 
 /* Card Section Styles */
 .card-section {
@@ -717,10 +664,11 @@ main {
   margin: 0 auto;
   display: flex;
   gap: 5rem;
+  flex-direction: column;
 }
 
 .newsletter {
-  width: 40%;
+  width: 100%;
 }
 
 .newsletter-text {
@@ -735,7 +683,8 @@ main {
 }
 
 .email-input {
-  flex: 1;
+  /* flex: 0.5; */
+  width: 50%;
   height: 2.5rem;
   padding: 0 1rem;
   border: none;
@@ -842,24 +791,28 @@ main {
 /* Weather Forecast Styles */
 .weather-forecast {
   background-color: #e8edf1;
-  padding: 40px 0;
+  padding: 2rem 0;
+  display: flex;
 }
 
 .forecast-container {
-  max-width: 1200px;
+  max-width: 60%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .today-forecast {
   background-color: #a6b2b4;
-  border-radius: 5px;
-  margin-bottom: 40px;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .forecast-header {
   background-color: #bf2d37;
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 5px 5px 0 0;
 }
 
@@ -870,23 +823,24 @@ main {
 }
 
 .forecast-content {
-  padding: 29px;
+  padding: 2rem;
 }
 
 .current-weather {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .temperature {
   font-size: 75px;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .weather-icon {
   font-size: 75px;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .weather-desc {
@@ -896,7 +850,7 @@ main {
 .weather-details {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 5rem;
 }
 
 .detail {
@@ -907,7 +861,7 @@ main {
 
 .detail-label {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 0rem;
 }
 
 .detail-value {
@@ -922,28 +876,33 @@ main {
 
 .five-day-forecast {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .forecast-day {
   background-color: #a6b2b4;
-  border: 1px solid #cbcbd3;
+  border-bottom: 1px solid #cbcbd35c;
   display: flex;
   align-items: center;
-  padding: 10px;
+  /* padding-top: 1rem; */
+  padding-right: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .date {
   background-color: #bf2d37;
-  border: 1px solid #cbcbd3;
-  width: 80px;
-  height: 72px;
+  /* border: 1px solid #cbcbd3; */
+  width: 5rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 
 .month {
@@ -963,7 +922,7 @@ main {
 
 .day-forecast {
   display: flex;
-  gap: 20px;
+  gap: 5rem;
   margin-left: auto;
 }
 
@@ -1207,7 +1166,7 @@ main {
 /* Donation Form Styles */
 .donation-form {
   width: 100%;
-  min-height: 1586px;
+  height: fit-content;
   position: relative;
   background-image: url('../img/heliform.jpg');
   background-size: cover;
@@ -1215,49 +1174,51 @@ main {
 }
 
 .form-container {
-  width: 1440px;
+  width: fit-content;
+  height: fit-content;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 5rem 0;
 }
 
 .form-content {
-  width: 720px;
-  height: 1230px;
+  width: 100%;
+  height: fit-content;
   margin: 0 auto;
   background-color: #e8edf1;
-  border-radius: 5px;
-  padding: 50px 100px;
+  border-radius: 1rem;
+  padding: 5rem 5rem;
 }
 
 .form-title {
   font-size: 72px;
-  margin-bottom: 60px;
+  margin-bottom: 3rem;
 }
 
 .donation-form-fields {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .form-group label {
   font-size: 24px;
+  padding-top: 2rem;
   color: #000;
 }
 
 .form-group input[type='text'],
 .form-group input[type='email'],
 .form-group input[type='tel'] {
-  height: 44px;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 10px;
+  height: 3rem;
+  padding: 1rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
   background-color: #fff;
   font-size: 18px;
 }
@@ -1270,31 +1231,33 @@ main {
 
 .currency {
   position: absolute;
-  left: 10px;
+  padding-left: 0.5rem;
   color: #555;
 }
 
 .amount-input input {
-  padding-left: 20px;
+  /* padding-left: 20rem; */
 }
 
 .checkbox {
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  display: inline-block;
+  gap: 1rem;
 }
 
 .checkbox input[type='checkbox'] {
-  width: 15px;
-  height: 15px;
-  border: 1px solid #000;
-  border-radius: 2px;
+  width: 1rem;
+  height: 1rem;
+  /* padding-top: 4rem; */
+  border: 0.5rem solid #000;
+  border-radius: 0.5rem;
 }
 
 .name-fields,
 .location-fields {
   flex-direction: row;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .name-input,
@@ -1302,45 +1265,251 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .payment-section {
-  margin-top: 60px;
+  margin-top: 3rem;
 }
 
 .card-details {
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 .card-details .form-group {
   flex: 1;
 }
 
-.donate-button {
-  width: 236px;
-  height: 50px;
-  background-color: #bf2d37;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-size: 24px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.donate-button:hover {
-  background-color: #a8252e;
-}
-
 /* media */
 
 @media (min-width: 992px) {
+  /* -------------------------------homepage */
+
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .content-section {
+    width: 50%;
+    margin: 12rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* snow report */
+  .snow-stats {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .snow-timeframes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0rem 1rem;
+  }
+
+  .snow-timeframes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0rem 1rem;
+  }
+
+  .timeframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem;
+  }
+  /* info */
+
+  .info-container {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .info-content {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .info-image {
+    height: fit-content;
+    width: 40%;
+    overflow: hidden;
+  }
+  .info-image img {
+    object-position: -10rem 3rem;
+
+    height: fit-content;
+    object-fit: cover;
+  }
+
+  /* crew section */
+  .crew-section {
+    width: 100%;
+    height: 60rem;
+    background-image: url('../img/s&r meeththecrew.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    /* filter: contrast(0.83) saturate(0.83); */
+  }
+
+  /* .crew-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(166, 178, 180, 0.4);
+  } */
+  .crew-content {
+    /* width: 50%;
+  
+    background-color: rgba(117, 117, 117, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 5rem; */
+    display: none;
+  }
+
+  .crew-section:hover {
+    .crew-content {
+      width: 50%;
+
+      background-color: rgba(117, 117, 117, 0.2);
+      backdrop-filter: blur(50px);
+      box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 5rem;
+    }
+
+    .crew-info {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: flex-end; */
+      gap: 2rem;
+      /* margin-left: 17.5rem; */
+    }
+
+    .crew-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .crew-text {
+      font-size: 18px;
+      color: white;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .crew-info .divider {
+      width: 100%;
+      height: 0.2rem;
+      background-color: white;
+      margin: 0;
+    }
+  }
+
+  /* footer */
+
+  .footer-content {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  .newsletter {
+    width: 40%;
+  }
+
+  /* -------Forecast */
+
+  /* Avalanche Safety */
+
+  /* hypothermia */
+
+  /* About Us */
+
+  /* Donate */
 }
 
 @media (min-width: 1200px) {
+  /* hompage */
+
+  /* Forecast */
+
+  /* Avalanche Safety */
+
+  /* hypothermia */
+
+  /* About Us */
+
+  /* Donate */
 }
 
 @media (min-width: 1400px) {
+  /* hompage */
+
+  /* Forecast */
+
+  /* Avalanche Safety */
+
+  /* hypothermia */
+
+  /* About Us */
+
+  /* Donate */
 }
