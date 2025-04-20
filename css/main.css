@@ -6,11 +6,42 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a,
+* {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
+  line-height: 1rem;
+}
+
+a:hover {
+  opacity: 70%;
 }
 /* homepage */
 
@@ -18,7 +49,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 
 body {
@@ -50,13 +81,10 @@ body {
 }
 
 .title {
-  font-size: 4rem;
-  font-weight: bold;
   margin-bottom: 0;
 }
 
 .subtitle {
-  font-size: 40px;
   margin-top: 0;
 }
 
@@ -95,13 +123,11 @@ body {
 }
 
 .stat-number {
-  font-size: 56px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 1rem;
 }
 
 .stat-label {
-  /* font-size: 24px; */
 }
 
 .donation-section {
@@ -112,7 +138,6 @@ body {
 }
 
 .donation-text {
-  font-size: 24px;
   margin-bottom: 2rem;
 }
 
@@ -125,7 +150,7 @@ body {
   padding: 0.5rem 1.875rem;
   border-radius: 1.875rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
   /* cursor: pointer;
   border: none; */
@@ -173,7 +198,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(232, 237, 241, 0.195);
+  background-color: rgba(232, 237, 241, 0.353);
 }
 
 .donate-hero {
@@ -247,13 +272,13 @@ body {
 }
 
 .hero-title {
-  font-size: 96px;
+  /* font-size: 96px; */
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .hero-subtitle {
-  font-size: 40px;
+  /* font-size: 40px; */
   margin-top: 0;
 }
 
@@ -356,8 +381,7 @@ main {
 }
 
 .snow-report-title {
-  font-size: 36px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #000;
   text-align: center;
 }
@@ -385,13 +409,11 @@ main {
 }
 
 .timeframe-label {
-  font-size: 18px;
   color: #000;
 }
 
 .timeframe-value {
-  font-size: 36px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #000;
 }
 
@@ -409,13 +431,11 @@ main {
 }
 
 .total-label {
-  font-size: 18px;
   color: #000;
 }
 
 .total-value {
-  font-size: 36px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #000;
 }
 
@@ -471,7 +491,6 @@ main {
 }
 
 .info-label {
-  font-size: 24px;
   color: #000;
 }
 
@@ -482,8 +501,6 @@ main {
 }
 
 .info-title {
-  font-size: 48px;
-  font-weight: bold;
   color: #000;
   /* line-height: 1.2; */
 }
@@ -593,62 +610,60 @@ main {
 /* Card Section Styles */
 .card-section {
   width: 100%;
-  min-height: 852px;
+  min-height: auto;
   background-color: #e8edf1;
-  padding: 112px 0;
+  padding: 5rem;
 }
 
 .card-container {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  gap: 64px;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 1.5rem;
 }
 
 .card-image {
-  width: 100%;
-  height: 320px;
+  width: 90%;
+
   overflow: hidden;
 }
 
 .card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .card-content {
-  padding: 0 80px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .card-label {
-  font-size: 24px;
   color: #000;
   text-align: right;
 }
 
 .card-title {
-  font-size: 48px;
-  font-weight: bold;
   color: #000;
-  line-height: 1.2;
 }
 
 .card-text {
-  font-size: 18px;
+  /*  
   color: #000;
   line-height: 1.6;
-  margin: 0;
+  margin: 0; */
 }
 
 /* Footer Styles */
@@ -656,7 +671,7 @@ main {
   width: 100%;
   min-height: auto;
   background-color: #a6b2b4;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .footer-content {
@@ -672,7 +687,7 @@ main {
 }
 
 .newsletter-text {
-  font-size: 24px;
+  /* font-size: 24px; */
   margin-bottom: 1rem;
 }
 
@@ -693,7 +708,7 @@ main {
 }
 
 .privacy-text {
-  font-size: 18px;
+  /* font-size: 18px; */
   color: #666;
 }
 
@@ -711,7 +726,8 @@ main {
 }
 
 .footer-heading {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -728,7 +744,7 @@ main {
 .footer-nav a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .social-links {
@@ -747,7 +763,7 @@ main {
   gap: 1rem;
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .social-links img {
@@ -774,7 +790,7 @@ main {
 }
 
 .copyright {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .legal-links {
@@ -785,7 +801,7 @@ main {
 .legal-links a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /* Weather Forecast Styles */
@@ -793,10 +809,11 @@ main {
   background-color: #e8edf1;
   padding: 2rem 0;
   display: flex;
+  width: 100vw;
 }
 
 .forecast-container {
-  max-width: 60%;
+  width: 100vw;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -808,6 +825,7 @@ main {
   background-color: #a6b2b4;
   border-radius: 0.5rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .forecast-header {
@@ -819,7 +837,7 @@ main {
 .forecast-header h2 {
   color: #e8edf1;
   margin: 0;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .forecast-content {
@@ -831,26 +849,29 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
+  flex-direction: column;
 }
 
 .temperature {
-  font-size: 75px;
+  /* font-size: 75px; */
   margin-right: 1rem;
 }
 
 .weather-icon {
-  font-size: 75px;
+  /* font-size: 75px; */
   margin-right: 1rem;
 }
 
 .weather-desc {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .weather-details {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
+  gap: 1.5rem;
+  flex-direction: column;
 }
 
 .detail {
@@ -860,18 +881,21 @@ main {
 }
 
 .detail-label {
-  font-size: 24px;
+  /* font-size: 24px; */
   margin-bottom: 0rem;
 }
 
 .detail-value {
-  font-size: 45px;
+  /* font-size: 45px; */
 }
 
 .weather-info {
   display: flex;
+
   justify-content: space-between;
-  font-size: 24px;
+  /* font-size: 24px; */
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .five-day-forecast {
@@ -907,17 +931,17 @@ main {
 
 .month {
   color: #e8edf1;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .day {
   color: #e8edf1;
-  font-size: 38px;
+  /* font-size: 38px; */
 }
 
 .day-name {
-  font-size: 24px;
-  margin-right: 20px;
+  /* font-size: 24px; */
+  margin-right: 1rem;
 }
 
 .day-forecast {
@@ -1165,7 +1189,7 @@ main {
 
 /* Donation Form Styles */
 .donation-form {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   position: relative;
   background-image: url('../img/heliform.jpg');
@@ -1174,12 +1198,24 @@ main {
 }
 
 .form-container {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.form-content {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: #e8edf1;
+  border-radius: 0rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 .form-content {
   width: 100%;
   height: fit-content;
@@ -1187,10 +1223,12 @@ main {
   background-color: #e8edf1;
   border-radius: 1rem;
   padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-title {
-  font-size: 72px;
+  /* font-size: 72px; */
   margin-bottom: 3rem;
 }
 
@@ -1207,7 +1245,7 @@ main {
 }
 
 .form-group label {
-  font-size: 24px;
+  /* font-size: 24px; */
   padding-top: 2rem;
   color: #000;
 }
@@ -1220,7 +1258,7 @@ main {
   border: 0.1rem solid #000;
   border-radius: 0.5rem;
   background-color: #fff;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .amount-input {
@@ -1256,7 +1294,7 @@ main {
 
 .name-fields,
 .location-fields {
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -1462,6 +1500,12 @@ main {
   }
 
   /* footer */
+  .footer {
+    width: 100%;
+    min-height: auto;
+    background-color: #a6b2b4;
+    padding: 5rem;
+  }
 
   .footer-content {
     width: auto;
@@ -1475,15 +1519,75 @@ main {
     width: 40%;
   }
 
-  /* -------Forecast */
+  /* -------------------------------------Forecast */
+  .weather-info {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+    gap: 0rem;
+  }
+  .form-container {
+    width: 40%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-direction: row;
+  }
+
+  .weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    gap: 0rem;
+    flex-direction: row;
+  }
+
+  .forecast-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .today-forecast {
+    background-color: #a6b2b4;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
 
   /* Avalanche Safety */
-
+  .card-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
   /* hypothermia */
 
   /* About Us */
 
   /* Donate */
+
+  .name-fields,
+  .location-fields {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
