@@ -1553,7 +1553,7 @@ main {
   }
 
   .forecast-container {
-    width: 90%;
+    width: 45%;
     margin: 0 auto;
     padding: 0;
     display: flex;
