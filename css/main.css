@@ -150,10 +150,9 @@ body {
   padding: 0.5rem 1.875rem;
   border-radius: 1.875rem;
   text-decoration: none;
-  /* font-size: 1.2rem; */
   box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.1);
-  /* cursor: pointer;
-  border: none; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .thebutton:hover {
@@ -636,7 +635,12 @@ main {
 }
 
 .card-image {
-  width: 90%;
+  width: 100%;
+  max-width: 500px; /* Adjust this value as needed */
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 
   overflow: hidden;
 }
