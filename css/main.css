@@ -9,7 +9,7 @@ h6,
 p,
 a,
 * {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 1.6;
@@ -62,7 +62,7 @@ body {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/lonehiker.jpg");
+  background-image: url('../img/lonehiker.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 0 3rem; */
@@ -165,7 +165,7 @@ body {
 .avalanche-hero {
   width: 100%;
   height: 40rem;
-  background-image: url("../img/mountains.jpg");
+  background-image: url('../img/mountains.jpg');
   background-size: cover;
   /* background-position: center; */
   position: relative;
@@ -173,7 +173,7 @@ body {
   align-items: center;
 }
 .avalanche-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -184,7 +184,7 @@ body {
 .forecast-hero {
   width: 100%;
   height: 40rem;
-  background-image: url("../img/skiiers.jpg");
+  background-image: url('../img/skiiers.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -192,7 +192,7 @@ body {
   align-items: center;
 }
 .forecast-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -205,7 +205,7 @@ body {
   width: 100%;
   height: 40rem;
   color: white;
-  background-image: url("../img/donate-bg.jpg");
+  background-image: url('../img/donate-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -225,7 +225,7 @@ body {
 .aboutus-hero {
   width: 100%;
   height: 40rem;
-  background-image: url("../img/aboutus.jpg");
+  background-image: url('../img/aboutus.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -244,7 +244,7 @@ body {
 .hypothermia-hero {
   width: 100%;
   height: 565px;
-  background-image: url("../img/snowmountains.jpg");
+  background-image: url('../img/snowmountains.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -252,7 +252,7 @@ body {
   align-items: center;
 }
 .hypothermia-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -296,11 +296,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4rem;
+  height: fit-content;
   background-color: #bf2d37;
-  box-shadow: 0 1px 10px rgba(77, 77, 79, 0.1);
+  box-shadow: 0 0.2rem 1rem rgba(77, 77, 79, 0.1);
   /* backdrop-filter: blur(50px); */
   z-index: 1000;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .nav-content {
@@ -308,14 +310,16 @@ body {
   height: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 .nav-logo {
   color: white;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -328,7 +332,7 @@ body {
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  /* font-size: 16; */
   transition: opacity 0.2s;
 }
 
@@ -358,7 +362,7 @@ main {
 
   padding: 5rem;
 
-  background-image: url("../img/snow-bg.jpg");
+  background-image: url('../img/snow-bg.jpg');
 
   background-size: fill;
   background-repeat: no-repeat;
@@ -528,7 +532,7 @@ main {
 .crew-section {
   width: 100%;
   height: 60rem;
-  background-image: url("../img/s&r meeththecrew.webp");
+  background-image: url('../img/s&r meeththecrew.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1083,23 +1087,20 @@ main {
   width: 1071px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;          /* lay out children in a horizontal row */ :contentReference[oaicite:1]{index=1}
-  align-items: center;          /* vertically center image and text */ :contentReference[oaicite:2]{index=2}
-  gap: 1rem;       
-
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 .module-image {
   width: 500px;
   height: 750px;
   overflow: hidden;
-  
 }
 
 .module-container .module-image img {
- 
-  height: auto;                 /* maintain the image’s aspect ratio */ :contentReference[oaicite:5]{index=5}
-  flex-shrink: 0;               /* stop the image from shrinking if text wraps */ :contentReference[oaicite:6]{index=6}
+  height: auto;
+  flex-shrink: 0;
 }
 
 .module-image img {
@@ -1203,7 +1204,7 @@ main {
   width: 100vw;
   height: fit-content;
   position: relative;
-  background-image: url("../img/heliform.jpg");
+  background-image: url('../img/heliform.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1261,9 +1262,9 @@ main {
   color: #000;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"] {
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='tel'] {
   height: 3rem;
   padding: 1rem;
   border: 0.1rem solid #000;
@@ -1295,7 +1296,7 @@ main {
   gap: 1rem;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type='checkbox'] {
   width: 1rem;
   height: 1rem;
   /* padding-top: 4rem; */
@@ -1334,7 +1335,20 @@ main {
 
 @media (min-width: 992px) {
   /* -------------------------------homepage */
+  /* nav */
+  .nav-content {
+    max-width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    gap: 0rem;
+  }
 
+  /* hero */
   .stats-container {
     display: flex;
     justify-content: space-between;
@@ -1434,7 +1448,7 @@ main {
   .crew-section {
     width: 100%;
     height: 60rem;
-    background-image: url("../img/s&r meeththecrew.webp");
+    background-image: url('../img/s&r meeththecrew.webp');
     background-size: cover;
     background-position: center;
     position: relative;
